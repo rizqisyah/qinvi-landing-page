@@ -103,9 +103,9 @@ export const englishContent = {
       desc:
         "Each guest receives a unique QR code that can be scanned at registration. The reception team can track attendance, record gifts, and export reports.",
       highlights: [
-        { tag: "PER-GUEST", icon: UserCheck, title: "Personal QR Code", desc: "Each invitation has a unique QR Code. The QR Code can only be scanned once and cannot be used by others.", image: "placeholder", leftLabel: "Per Guest", rightLabel: "One-Time" },
-        { tag: "GREETING", icon: SearchCheck, title: "Greeting Screen", desc: "Display each guest's name automatically on screen after a successful QR scan, creating a warmer welcome moment.", image: "placeholder", leftLabel: "Guest Screen", rightLabel: "Auto Display" },
-        { tag: "CHECK-IN", icon: ScanLine, title: "QR App (Registration)", desc: "A smart digital guestbook via QR scan. Attendance, gifts, and reports are recorded real-time in one system.", leftLabel: "Live Scan", rightLabel: "Realtime", image: "/img/qr-app.png" },
+        { tag: "PER-GUEST", icon: UserCheck, title: "Personal QR Code", desc: "Each invitation has a unique QR Code. The QR Code can only be scanned once and cannot be used by others.", image: "placeholder" },
+        { tag: "GREETING", icon: SearchCheck, title: "Greeting Screen", desc: "Display each guest's name automatically on screen after a successful QR scan, creating a warmer welcome moment.", image: "placeholder" },
+        { tag: "CHECK-IN", icon: ScanLine, title: "QR App (Registration)", desc: "A smart digital guestbook via QR scan. Attendance, gifts, and reports are recorded real-time in one system.", image: "/img/qr-app.png" },
       ],
       checklist: ["Fast QR scan", "Multi-device", "Greeting screen", "Real-time report"],
     },
@@ -118,9 +118,21 @@ export const englishContent = {
   ],
   portfolio: portfolioData,
   testimonials: [
-    "The team was responsive, the process was neat, and the invitation felt truly personal.",
-    "RSVP helped a lot because we had hundreds of guests. The wedding-day report was very clear.",
-    "The design was elegant, not too template-like, and every request was explained in detail.",
+    {
+      quote: "The team was responsive, the process was neat, and the invitation felt truly personal.",
+      name: "Rina & Adit",
+      meta: "Couple · Bandung",
+    },
+    {
+      quote: "RSVP helped a lot because we had hundreds of guests. The wedding-day report was very clear.",
+      name: "Siska & Dimas",
+      meta: "Couple · Surabaya",
+    },
+    {
+      quote: "The design was elegant, not too template-like, and every request was explained in detail.",
+      name: "Nadia & Fajar",
+      meta: "Couple · Jakarta",
+    },
   ],
 };
 

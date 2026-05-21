@@ -103,9 +103,9 @@ export const indonesiaContent = {
       desc:
         "Setiap tamu memiliki QR unik yang bisa dipindai di meja registrasi. Tim penerima tamu dapat melihat status kehadiran, mencatat hadiah, dan mengekspor laporan.",
       highlights: [
-        { tag: "PER-GUEST", icon: UserCheck, title: "Personal QR Code", desc: "Setiap undangan memiliki QR Code masing-masing. QR Code hanya dapat scan satu kali, tidak bisa digunakan orang lain.", image: "placeholder", leftLabel: "Per Tamu", rightLabel: "Sekali Pakai" },
-        { tag: "GREETING", icon: SearchCheck, title: "Layar Sapa", desc: "Tampilkan nama tamu secara otomatis di layar saat QR berhasil dipindai, sehingga momen penyambutan terasa lebih personal.", image: "placeholder", leftLabel: "Layar Tamu", rightLabel: "Auto Display" },
-        { tag: "CHECK-IN", icon: ScanLine, title: "QR App (Aplikasi Registrasi)", desc: "Buku tamu digital yang lebih canggih melalui sistem scan QR Code. Kehadiran, hadiah, hingga foto selfie tamu tercatat real-time dalam satu sistem.", image: "/img/qr-app.png", leftLabel: "Live Scan", rightLabel: "Realtime" },
+        { tag: "PER-GUEST", icon: UserCheck, title: "Personal QR Code", desc: "Setiap undangan memiliki QR Code masing-masing. QR Code hanya dapat scan satu kali, tidak bisa digunakan orang lain.", image: "placeholder" },
+        { tag: "GREETING", icon: SearchCheck, title: "Layar Sapa", desc: "Tampilkan nama tamu secara otomatis di layar saat QR berhasil dipindai, sehingga momen penyambutan terasa lebih personal.", image: "placeholder" },
+        { tag: "CHECK-IN", icon: ScanLine, title: "QR App (Aplikasi Registrasi)", desc: "Buku tamu digital yang lebih canggih melalui sistem scan QR Code. Kehadiran, hadiah, hingga foto selfie tamu tercatat real-time dalam satu sistem.", image: "/img/qr-app.png" },
       ],
       checklist: ["Scan QR cepat", "Multi device", "Layar sapa", "Laporan realtime"],
     },
@@ -118,9 +118,21 @@ export const indonesiaContent = {
   ],
   portfolio: portfolioData,
   testimonials: [
-    "Timnya responsif, prosesnya rapi, dan hasil undangannya terasa personal.",
-    "RSVP sangat membantu karena tamu kami ratusan. Laporan hari H jelas sekali.",
-    "Desainnya elegan, tidak template banget, dan semua request dijelaskan dengan detail.",
+    {
+      quote: "Timnya responsif, prosesnya rapi, dan hasil undangannya terasa personal.",
+      name: "Rina & Adit",
+      meta: "Pengantin · Bandung",
+    },
+    {
+      quote: "RSVP sangat membantu karena tamu kami ratusan. Laporan hari H jelas sekali.",
+      name: "Siska & Dimas",
+      meta: "Pengantin · Surabaya",
+    },
+    {
+      quote: "Desainnya elegan, tidak template banget, dan semua request dijelaskan dengan detail.",
+      name: "Nadia & Fajar",
+      meta: "Pengantin · Jakarta",
+    },
   ],
 };
 

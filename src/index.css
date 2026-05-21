@@ -9,5 +9,16 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background: #f7f2ea;
+  background: #faf8f5;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Playfair Display for headings */
+.font-serif {
+  font-family: "Playfair Display", Georgia, ui-serif, serif;
+}
+
+/* Smooth transitions for all interactive elements */
+button, a {
+  transition: all 0.2s ease;
 }
