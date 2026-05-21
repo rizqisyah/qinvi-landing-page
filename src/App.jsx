@@ -299,10 +299,10 @@ export default function LandingPageUndanganDigital() {
 
             {/* Services Section */}
             <section id="layanan" className="mx-auto max-w-7xl px-6 py-24 lg:px-12 lg:py-32">
-              <div className="mb-16">
+              <div className="mb-16 text-center">
                 <p className="text-xs uppercase tracking-[0.3em] text-muted mb-4">{t.servicesEyebrow}</p>
-                <h2 className="font-serif text-4xl md:text-6xl leading-[1.1] tracking-tight text-primary max-w-3xl">{t.servicesTitle}</h2>
-                <p className="mt-6 max-w-xl text-secondary leading-relaxed">{t.servicesDesc}</p>
+                <h2 className="font-serif text-4xl md:text-6xl leading-[1.1] tracking-tight text-primary max-w-3xl mx-auto">{t.servicesTitle}</h2>
+                <p className="mt-6 max-w-xl mx-auto text-secondary leading-relaxed">{t.servicesDesc}</p>
               </div>
 
               <div className="grid gap-6 md:grid-cols-3">
@@ -362,7 +362,6 @@ export default function LandingPageUndanganDigital() {
                           ))}
                         </div>
                       </div>
-
                       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {t.serviceDetails[activeService].highlights.map((item, i) => (
                           <div key={item.title} className="flex flex-col border border-border bg-cream/30 p-6 transition hover:bg-cream/50">
@@ -448,13 +447,13 @@ export default function LandingPageUndanganDigital() {
                       </div>
                     </>
                   ) : (
-                    <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
-                      <div>
+                    <>
+                      <div className="text-center mb-10">
                         <p className="text-xs uppercase tracking-[0.3em] text-muted mb-3">{t.serviceDetails[activeService].eyebrow}</p>
                         <h3 className="font-serif text-3xl md:text-4xl tracking-tight text-primary">{t.serviceDetails[activeService].title}</h3>
-                        <p className="mt-5 text-secondary leading-relaxed">{t.serviceDetails[activeService].desc}</p>
+                        <p className="mt-5 max-w-2xl mx-auto text-secondary leading-relaxed">{t.serviceDetails[activeService].desc}</p>
 
-                        <div className="mt-8 flex flex-wrap gap-2">
+                        <div className="mt-8 flex flex-wrap justify-center gap-2">
                           {t.serviceDetails[activeService].checklist.map((item) => (
                             <span key={item} className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm text-secondary">
                               <Check className="h-4 w-4 text-accent" />
@@ -464,7 +463,7 @@ export default function LandingPageUndanganDigital() {
                         </div>
                       </div>
 
-                      <div className="grid gap-5 sm:grid-cols-2">
+                      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
                         {t.serviceDetails[activeService].highlights.map((item, i) => (
                           <div key={item.title} className="border border-border bg-cream/50 p-6 transition hover:bg-cream">
                             <div className="mb-5 flex items-center justify-between">
@@ -478,7 +477,7 @@ export default function LandingPageUndanganDigital() {
                           </div>
                         ))}
                       </div>
-                    </div>
+                    </>
                   )}
                 </motion.div>
               )}
@@ -486,14 +485,14 @@ export default function LandingPageUndanganDigital() {
 
             {/* Features Section (Dark) */}
             <section id="fitur" className="bg-primary px-6 py-24 text-white lg:px-12 lg:py-32">
-              <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-2 lg:gap-24">
-                <div className="lg:sticky lg:top-32">
+              <div className="mx-auto max-w-7xl">
+                <div className="text-center mb-16">
                   <p className="text-xs uppercase tracking-[0.3em] text-white/50 mb-4">{t.featuresEyebrow}</p>
-                  <h2 className="font-serif text-4xl md:text-6xl leading-[1.1] tracking-tight">{t.featuresTitle}</h2>
-                  <p className="mt-6 text-white/60 leading-relaxed">{t.featuresDesc}</p>
+                  <h2 className="font-serif text-4xl md:text-6xl leading-[1.1] tracking-tight max-w-3xl mx-auto">{t.featuresTitle}</h2>
+                  <p className="mt-6 text-white/60 leading-relaxed max-w-xl mx-auto">{t.featuresDesc}</p>
                 </div>
 
-                <div className="grid gap-5 sm:grid-cols-2">
+                <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
                   {t.guestTools.map((tool) => (
                     <div key={tool.title} className="border border-white/10 p-7 transition hover:border-white/20">
                       <div className="flex items-center justify-between mb-6">
@@ -511,17 +510,17 @@ export default function LandingPageUndanganDigital() {
                 </div>
               </div>
             </section>
-
-            {/* Portfolio Section */}
             <section id="portofolio" className="mx-auto max-w-7xl px-6 py-24 lg:px-12 lg:py-32">
-              <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+              <div className="mb-12 text-center">
                 <div>
                   <p className="text-xs uppercase tracking-[0.3em] text-muted mb-4">{t.portfolioEyebrow}</p>
                   <h2 className="font-serif text-4xl md:text-6xl leading-[1.1] tracking-tight text-primary">{t.portfolioTitle}</h2>
                 </div>
-                <Button onClick={() => setShowDesignPage(true)} variant="outline" className="w-fit rounded-full border-border px-6 hover:bg-white">
-                  {t.seeAll}
-                </Button>
+                <div className="mt-6">
+                  <Button onClick={() => setShowDesignPage(true)} variant="outline" className="rounded-full border-border px-6 hover:bg-white">
+                    {t.seeAll}
+                  </Button>
+                </div>
               </div>
 
               <div className="flex flex-wrap gap-2 mb-10">
@@ -625,29 +624,25 @@ export default function LandingPageUndanganDigital() {
 
             {/* CTA Section */}
             <section className="px-6 pb-24 lg:px-12 lg:pb-32">
-              <div className="mx-auto max-w-7xl bg-primary p-10 lg:p-16 text-white">
-                <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.3em] text-white/50 mb-4">{t.ctaEyebrow}</p>
-                    <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] tracking-tight">{t.ctaTitle}</h2>
-                    <p className="mt-6 text-white/60 leading-relaxed">{t.ctaDesc}</p>
-                  </div>
-                  <div>
-                    <ul className="space-y-4 mb-8">
-                      {t.ctaList.map((item) => (
-                        <li key={item} className="flex items-center gap-3 text-white/70">
-                          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white text-primary">
-                            <Check className="h-3 w-3" />
-                          </span>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                    <Button asChild size="lg" className="h-14 w-full rounded-full bg-white text-primary hover:bg-cream">
-                      <a href="https://wa.me/62895358390756" target="_blank" rel="noreferrer">{t.whatsappCta}</a>
-                    </Button>
-                  </div>
+              <div className="mx-auto max-w-7xl bg-primary p-10 lg:p-16 text-white text-center">
+                <div className="max-w-2xl mx-auto mb-10">
+                  <p className="text-xs uppercase tracking-[0.3em] text-white/50 mb-4">{t.ctaEyebrow}</p>
+                  <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] tracking-tight">{t.ctaTitle}</h2>
+                  <p className="mt-6 text-white/60 leading-relaxed">{t.ctaDesc}</p>
                 </div>
+                <ul className="flex flex-wrap justify-center gap-4 mb-10">
+                  {t.ctaList.map((item) => (
+                    <li key={item} className="flex items-center gap-3 text-white/70">
+                      <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white text-primary">
+                        <Check className="h-3 w-3" />
+                      </span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <Button asChild size="lg" className="h-14 rounded-full bg-white text-primary hover:bg-cream px-10">
+                  <a href="https://wa.me/62895358390756" target="_blank" rel="noreferrer">{t.whatsappCta}</a>
+                </Button>
               </div>
             </section>
           </>
