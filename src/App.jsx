@@ -83,7 +83,7 @@ export default function LandingPageUndanganDigital() {
               {t.languageButton}
             </Button>
             <Button asChild variant="outline" className="rounded-full border-primary/20 px-6 hover:bg-primary hover:text-white">
-              <a href="https://wa.me/62895358390756" target="_blank" rel="noreferrer">{t.consult}</a>
+              <a href="https://wa.me/62895358390756" target="_blank" rel="noreferrer" onClick={() => window.fbq && window.fbq('track', 'Contact')}>{t.consult}</a>
             </Button>
           </div>
 
@@ -105,7 +105,7 @@ export default function LandingPageUndanganDigital() {
                   {t.languageButton}
                 </Button>
                 <Button asChild className="flex-1 rounded-full bg-primary text-white hover:bg-primary/90">
-                  <a href="https://wa.me/62895358390756" target="_blank" rel="noreferrer" onClick={() => setMobileOpen(false)}>{t.consult}</a>
+                  <a href="https://wa.me/62895358390756" target="_blank" rel="noreferrer" onClick={() => { setMobileOpen(false); window.fbq && window.fbq('track', 'Contact'); }}>{t.consult}</a>
                 </Button>
               </div>
             </div>
@@ -224,7 +224,7 @@ export default function LandingPageUndanganDigital() {
 
                   <motion.div variants={fadeUp} className="mt-10 flex flex-col gap-4 sm:flex-row">
                     <Button asChild size="lg" className="h-14 rounded-full bg-primary px-8 text-white hover:bg-primary/90">
-                      <a href="https://wa.me/62895358390756" target="_blank" rel="noreferrer" className="inline-flex items-center">
+                      <a href="https://wa.me/62895358390756" target="_blank" rel="noreferrer" className="inline-flex items-center" onClick={() => window.fbq && window.fbq('track', 'Contact')}>
                         {t.primaryCta} <ArrowRight className="ml-2 h-4 w-4" />
                       </a>
                     </Button>
@@ -641,7 +641,7 @@ export default function LandingPageUndanganDigital() {
                   ))}
                 </ul>
                 <Button asChild size="lg" className="h-14 rounded-full bg-white text-primary hover:bg-cream px-10">
-                  <a href="https://wa.me/62895358390756" target="_blank" rel="noreferrer">{t.whatsappCta}</a>
+                  <a href="https://wa.me/62895358390756" target="_blank" rel="noreferrer" onClick={() => window.fbq && window.fbq('track', 'Contact')}>{t.whatsappCta}</a>
                 </Button>
               </div>
             </section>
